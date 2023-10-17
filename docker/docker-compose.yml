@@ -1,0 +1,18 @@
+version: '3'
+services:
+  chat-server:
+    image: ngthminhdev/chat-app-server:${TAG}
+    ports:
+      - '5000:5000'
+    environment:
+      - CONFIG_SERVER_HOST=
+      - CONFIG_SERVER_PORT=
+      - CONFIG_API_PREFIX=
+      - CONFIG_MONGODB_HOST=
+      - CONFIG_MONGODB_PORT=
+      - CONFIG_MONGODB_USERNAME=
+      - CONFIG_MONGODB_PASSWORD=
+      - CONFIG_MONGODB_DATABASE=
+      - CONFIG_ACCESS_TOKEN_SECRET=
+      - CONFIG_REFRESH_TOKEN_SECRET=
+      - CONFIG_REDIS_URI=
